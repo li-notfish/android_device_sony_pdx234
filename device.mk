@@ -46,12 +46,14 @@ PRODUCT_PACKAGES += \
     SonyPDX234SystemUIRes \
     SonyPDX234NfcNciRes
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Xperia Extras
+$(call inherit-product, vendor/sony/extra/Yodo/extra.mk)
+TARGET_SHIPS_SONY_FRAMEWORK := true
+TARGET_SHIPS_SONY_CAMERA := true
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
