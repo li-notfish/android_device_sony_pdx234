@@ -22,6 +22,7 @@ namespace_imports = [
     'hardware/qcom-caf/sm8550',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/sony/sm8550-common',
+    "hardware/qcom-caf/common/libqti-perfd-client",
 ]
 
 blob_fixups: blob_fixups_user_type = {
