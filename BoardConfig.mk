@@ -28,12 +28,6 @@ TARGET_KERNEL_CONFIG += vendor/sony/pdx234.config
 # Props
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
-# ArCord
-TARGET_INCLUDE_STOCK_ARCORE := true
-
-# AiCore
-TARGET_INCLUDE_STOCK_AICORE := true
-
 # OTA
 TARGET_OTA_ASSERT_DEVICE := pdx234,XQ-DQ72
 

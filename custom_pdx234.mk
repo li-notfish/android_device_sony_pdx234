@@ -26,6 +26,14 @@ $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 IS_PHONE := true
 
+WITH_GMS_AICORE := true
+
+# ArCord
+TARGET_INCLUDE_STOCK_ARCORE := true
+
+# AiCore
+TARGET_INCLUDE_STOCK_AICORE := true
+
 PRODUCT_BUILD_PROP_OVERRIDES := \
     DeviceName=XQ-DQ72 \
     DeviceProduct=XQ-DQ72 \
