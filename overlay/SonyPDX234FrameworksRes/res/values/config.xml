@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_default">115.0px</dimen>
+    <dimen name="status_bar_height_portrait">115.0px</dimen>
+    <dimen name="status_bar_height_landscape">14dip</dimen>
+
+    <!-- The stable device width and height in pixels. If these aren't set to a positive number
+         then the device will use the width and height of the default display the first time it's
+         booted.  -->
+    <integer name="config_stableDeviceDisplayWidth">1096</integer>
+    <integer name="config_stableDeviceDisplayHeight">2560</integer>
+
+    <!-- Enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- Default value for performant auth feature. -->
+    <bool name="config_performantAuthDefault">true</bool>
+</resources>
