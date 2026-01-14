@@ -20,8 +20,9 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
-    <!-- Preferred max refresh rate at AOD & Ambient Display, if supported by the display. -->
-    <integer name="config_aodMaxRefreshRate">60</integer>
-
-    <bool name="config_enableBouncerUserSwitcher">true</bool>
+    <bool name="can_use_one_handed_bouncer">true</bool>
+    <bool name="config_use_split_notification_shade">true</bool>
+    <bool name="config_skinnyNotifsInLandscape">false</bool>
+    <bool name="is_small_screen_landscape">false</bool>
+    <bool name="volume_dialog_ringer_drawer_should_open_to_the_side">false</bool>
 </resources>
