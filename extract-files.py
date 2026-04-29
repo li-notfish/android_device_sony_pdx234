@@ -26,6 +26,17 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+    (
+	'odm/etc/customization/A301SO/config.prop',
+	'odm/etc/customization/SO-51D/config.prop',
+	'odm/etc/customization/SOG10_jp_kdi/config.prop',
+	'odm/etc/customization/XQ-DQ44/config.prop',
+	'odm/etc/customization/XQ-DQ54_EEA/config.prop',
+	'odm/etc/customization/XQ-DQ62/config.prop',
+	'odm/etc/customization/XQ-DQ72/config.prop',
+	'odm/etc/customization/XQ-DQ72_CN/config.prop'
+    ): blob_fixup().
+        regex_replace('vendor', 'odm'),
     'vendor/lib64/libarcsoft_hdr_adapter.so': blob_fixup()
     .add_needed(
         'liblog.so',

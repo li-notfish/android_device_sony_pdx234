@@ -652,6 +652,31 @@ vendor/firmware/cs40l25a_a2h3.bin
 vendor/firmware/cs40l25a_cal.bin
 vendor/firmware/cs40l25a_cal.wmfw
 
+# SKU
+odm/etc/customization/A301SO/config.prop
+odm/etc/customization/SO-51D/config.prop
+odm/etc/customization/SOG10_jp_kdi/config.prop
+odm/etc/customization/XQ-DQ44/config.prop
+odm/etc/customization/XQ-DQ54_EEA/config.prop
+odm/etc/customization/XQ-DQ62/config.prop
+odm/etc/customization/XQ-DQ72/config.prop
+odm/etc/customization/XQ-DQ72_CN/config.prop
+odm/etc/customization/c000002/config.prop
+odm/etc/customization/c000018/config.prop
+odm/etc/customization/c000027/config.prop
+odm/etc/customization/c000032/config.prop
+odm/etc/customization/c001435/config.prop
+odm/etc/customization/c001492/config.prop
+odm/etc/customization/c001526/config.prop
+odm/etc/customization/c001707/config.prop
+odm/etc/customization/c001839/config.prop
+odm/etc/customization/c001884/config.prop
+odm/etc/customization/c999990/config.prop
+odm/etc/customization/c999996/config.prop
+odm/etc/customization/c999997/config.prop
+odm/etc/customization/c999998/config.prop
+odm/etc/customization/c999999/config.prop
+
 # Touchscreen firmware
 vendor/firmware/touch_module_id_0x01.img
 
