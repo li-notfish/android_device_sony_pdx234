@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    SonyPDX234FrameworksRes \
     SonyPDX234SystemUIRes \
     SonyPDX234NfcNciRes
 
