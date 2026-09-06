@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pdx234.mk
+    $(LOCAL_DIR)/uwu_pdx234.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_pdx234-user \
-    lineage_pdx234-userdebug \
-    lineage_pdx234-eng
+    uwu_pdx234-cp2a-user \
+    uwu_pdx234-cp2a-userdebug \
+    uwu_pdx234-cp2a-eng

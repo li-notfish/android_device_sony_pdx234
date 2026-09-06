@@ -54,5 +54,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Xperia Extras
+$(call inherit-product, device/sony/extras/extra.mk)
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)

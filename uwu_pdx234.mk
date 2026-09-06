@@ -22,7 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+UWU_DEVICE_TYPE := phone
+UWU_SUPPORTS_TELEPHONY := true
+$(call inherit-product, vendor/uwu/config/common.mk)
 
 IS_PHONE := true
 
@@ -34,7 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES := \
     BuildFingerprint=Sony/XQ-DQ72/XQ-DQ72:15/67.2.A.3.178/067002A003017800521143226:user/release-keys \
     BuildDesc="XQ-DQ72-user 15 67.2.A.3.178 067002A003017800521143226 release-keys"
 
-PRODUCT_NAME := lineage_pdx234
+PRODUCT_NAME := uwu_pdx234
 PRODUCT_DEVICE := pdx234
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
