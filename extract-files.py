@@ -47,6 +47,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcammw.so': blob_fixup()
     .replace_needed(
         'android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'
+    )
+    # CameraFlashLed::turnOnTorch: MOVZ W8, #15 -> #500
+    # Unique torch path context (0x13b08c); bare e8018052 occurs 5 times.
+    .binary_regex_replace(
+        b'\x9f\x1e\x00\x72\x60\x00\x00\x54\xe8\x01\x80\x52\x11\x00\x00\x14',
+        b'\x9f\x1e\x00\x72\x60\x00\x00\x54\x88\x3e\x80\x52\x11\x00\x00\x14',
     ),
     'vendor/lib64/camx.provider-impl.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
