@@ -59,7 +59,3 @@ $(call inherit-product, device/sony/extras/extra.mk)
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/sony/pdx234/pdx234-vendor.mk)
-
-# Kernel
-PRODUCT_PACKAGES += \
-    kernel
